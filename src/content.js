@@ -1,25 +1,6 @@
 
-function renderPage () {
-    let body = document.querySelector("body");
+function renderAbout () {
     let content = document.getElementById("content");
-
-    let navBar = document.createElement("header")
-    navBar.setAttribute('id', 'navbar');
-
-    let aboutButton = document.createElement("button");
-    aboutButton.classList += "navbuttons";
-    aboutButton.type = "button";
-    aboutButton.textContent = "About";
-
-    let menuButton = document.createElement("button");
-    menuButton.classList += "navbuttons";
-    menuButton.type = "button";
-    menuButton.textContent = "Menu";
-
-    let contactButton = document.createElement("button");
-    contactButton.classList += "navbuttons";
-    contactButton.type = "button";
-    contactButton.textContent = "Contact";
 
     let about = document.createElement("div");
     about.setAttribute('id', 'about');
@@ -37,10 +18,6 @@ function renderPage () {
     let aboutText = document.createElement("h4");
     aboutText.textContent = "Our pizza is the best pizza! Nobody else has pizza as tasty as ours! Pizza has never been so good as it is at our restaurant! Order pizza from us today! Our number is 55P-IZZA!";
 
-    body.insertBefore(navBar, content);
-    navBar.appendChild(aboutButton);
-    navBar.appendChild(menuButton);
-    navBar.appendChild(contactButton);
     content.appendChild(about);
     about.appendChild(pizzaimg);
     about.appendChild(textDiv);
@@ -50,4 +27,4 @@ function renderPage () {
 
 };
 
-export default renderPage;
+export default renderAbout;

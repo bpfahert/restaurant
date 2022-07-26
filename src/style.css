@@ -1,5 +1,6 @@
 body {
     background-color: maroon;
+    height:100vh;
 }
 
 #content {
@@ -9,7 +10,7 @@ body {
     justify-content: center;
 }
 
-.text {
+.text,.menu {
     background-color: lightblue;
    text-align: center;
    width: 1000px;
@@ -18,13 +19,52 @@ body {
 #navbar {
     display: flex;
     justify-content: center;
-    height: 70px;
+    height: 40px;
     width: auto;
     background-color: lightgreen;
+    gap: 10px;
 }
 
 .navbuttons {
     border-radius: 15px;
     font-size: 2em;
     background-color: lightpink;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.menuItem {
+    width: 650px;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 300px;
+    border: solid black 2px;
+    margin: 20px;
+    padding-top: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 15px;
+
+}
+
+.menuTitle {
+    font-size: 2rem;
+    text-emphasis: bold;;
+}
+
+footer {
+    background: teal;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    height: 30px;
 }
