@@ -1,0 +1,30 @@
+body {
+    background-color: maroon;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    background-color: lightblue;
+   text-align: center;
+   width: 1000px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: auto;
+    background-color: lightgreen;
+}
+
+.navbuttons {
+    border-radius: 15px;
+    font-size: 2em;
+    background-color: lightpink;
+}
